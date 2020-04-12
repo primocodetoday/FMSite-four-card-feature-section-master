@@ -2,4 +2,10 @@
 
 ![Design preview for the Four card feature section coding challenge](./design/desktop-preview.jpg)
 
-My challenge is to build out this feature section and get it looking as close to the design as possible.
+---
+
+####Technology in project
+
+only html & css
+
+####You can see live site [here](https://primocodetoday.github.io/FMSite-four-card-feature-section-master/ "here")
