@@ -7,7 +7,7 @@
 }
 
 /*************TAGS***************/
-body {
+.page {
   background-color: #fafafa;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
@@ -25,33 +25,54 @@ body {
   height: 100%;
 }
 
-header {
+.header {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 40px;
 }
 
-header h2 {
+@media (max-width: 375px) {
+  .header {
+    margin: 5px auto 20px;
+  }
+}
+
+.header__sub-title {
   font-size: 2.29rem;
   font-weight: 200;
   color: #4c4e61;
 }
 
-header h1 {
+@media (max-width: 375px) {
+  .header__sub-title {
+    font-size: 2rem;
+    margin-top: 5px;
+    margin-bottom: 35px;
+  }
+}
+
+.header__main-title {
   color: #4c4e61;
   font-size: 2.28rem;
   margin-top: -35px;
 }
 
-header p {
+.header__paragraph {
   margin-top: 0px;
   font-size: 1rem;
   letter-spacing: -0.4px;
 }
 
-main {
-  margin-left: auto;
-  margin-right: auto;
+@media (max-width: 375px) {
+  .header__paragraph {
+    margin: auto;
+    width: 90vw;
+    font-size: 1.5rem;
+  }
+}
+
+.main {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,17 +86,14 @@ main {
       flex-wrap: wrap;
 }
 
-main .center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.main--center {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-div {
+.card {
   position: relative;
   background: white;
   height: 230px;
@@ -89,24 +107,31 @@ div {
           box-shadow: 0px 8px 18px 0px rgba(155, 155, 155, 0.34);
 }
 
-div h3 {
+@media (max-width: 375px) {
+  .card {
+    width: 90%;
+    margin: 25px auto;
+  }
+}
+
+.card__title {
   margin-top: 8px;
   color: #4c4e61;
   font-size: 1.3rem;
 }
 
-div p {
+.card__paragraph {
   margin-top: 5px;
   font-size: 0.8rem;
 }
 
-div img {
+.card__img {
   position: absolute;
   right: 30px;
   bottom: 30px;
 }
 
-div::before {
+.card::before {
   content: "";
   position: absolute;
   left: 0;
@@ -115,52 +140,32 @@ div::before {
   height: 4px;
 }
 
-footer {
+.card--supervisor::before {
+  background: #45d3d3;
+}
+
+.card--teambulider::before {
+  background: #ea5353;
+}
+
+.card--karma::before {
+  background: #fcaf4a;
+}
+
+.card--calculator::before {
+  background: #549ef2;
+}
+
+.footer {
   width: 100%;
 }
 
-footer .attribution {
+.footer__paragraph {
   font-size: 11px;
   text-align: center;
 }
 
-footer .attribution a {
+.footer__link {
   color: #3e52a3;
-}
-
-.main-supervisor::before {
-  background: #45d3d3;
-}
-
-.main-teambulider::before {
-  background: #ea5353;
-}
-
-.main-karma::before {
-  background: #fcaf4a;
-}
-
-.main-calculator::before {
-  background: #549ef2;
-}
-
-@media (max-width: 375px) {
-  div {
-    width: 90%;
-    margin: 25px auto;
-  }
-  header {
-    margin: 5px auto 20px;
-  }
-  header h2 {
-    font-size: 2rem;
-    margin-top: 5px;
-    margin-bottom: 35px;
-  }
-  header p {
-    margin: auto;
-    width: 90vw;
-    font-size: 1.5rem;
-  }
 }
 /*# sourceMappingURL=styles.css.map */

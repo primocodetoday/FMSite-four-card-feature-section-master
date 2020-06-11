@@ -14,7 +14,7 @@ $breakpoint-mobile: 375px;
 }
 
 /*************TAGS***************/
-body {
+.page {
   background-color: $base-background;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
@@ -25,45 +25,59 @@ body {
   height: 100%;
 }
 
-header {
+.header {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 40px;
 
-  h2 {
+  @media (max-width: $breakpoint-mobile) {
+    margin: 5px auto 20px;
+  }
+
+  &__sub-title {
     font-size: 2.29rem;
     font-weight: 200;
     color: $strong-accent;
+
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 2rem;
+      margin-top: 5px;
+      margin-bottom: 35px;
+    }
   }
 
-  h1 {
+  &__main-title {
     color: $strong-accent;
     font-size: 2.28rem;
     margin-top: -35px;
   }
 
-  p {
+  &__paragraph {
     margin-top: 0px;
     font-size: 1rem;
     letter-spacing: -0.4px;
+
+    @media (max-width: $breakpoint-mobile) {
+      margin: auto;
+      width: 90vw;
+      font-size: 1.5rem;
+    }
   }
 }
 
-main {
-  margin-left: auto;
-  margin-right: auto;
+.main {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 
-  .center {
-    display: flex;
+  &--center {
     flex-direction: column;
   }
 }
 
-div {
+.card {
   position: relative;
   background: white;
   height: 230px;
@@ -75,18 +89,23 @@ div {
   text-align: left;
   box-shadow: 0px 8px 18px 0px rgba(155, 155, 155, 0.34);
 
-  h3 {
+  @media (max-width: $breakpoint-mobile) {
+    width: 90%;
+    margin: 25px auto;
+  }
+
+  &__title {
     margin-top: 8px;
     color: #4c4e61;
     font-size: 1.3rem;
   }
 
-  p {
+  &__paragraph {
     margin-top: 5px;
     font-size: 0.8rem;
   }
 
-  img {
+  &__img {
     position: absolute;
     right: 30px;
     bottom: 30px;
@@ -100,50 +119,28 @@ div {
     width: 100%;
     height: 4px;
   }
+  &--supervisor::before {
+    background: #45d3d3;
+  }
+  &--teambulider::before {
+    background: #ea5353;
+  }
+  &--karma::before {
+    background: #fcaf4a;
+  }
+  &--calculator::before {
+    background: #549ef2;
+  }
 }
 
-footer {
+.footer {
   width: 100%;
 
-  .attribution {
+  &__paragraph {
     font-size: 11px;
     text-align: center;
   }
-  .attribution a {
+  &__link {
     color: #3e52a3;
-  }
-}
-
-.main-supervisor::before {
-  background: #45d3d3;
-}
-.main-teambulider::before {
-  background: #ea5353;
-}
-.main-karma::before {
-  background: #fcaf4a;
-}
-.main-calculator::before {
-  background: #549ef2;
-}
-
-@media (max-width: $breakpoint-mobile) {
-  div {
-    width: 90%;
-    margin: 25px auto;
-  }
-  header {
-    margin: 5px auto 20px;
-
-    h2 {
-      font-size: 2rem;
-      margin-top: 5px;
-      margin-bottom: 35px;
-    }
-    p {
-      margin: auto;
-      width: 90vw;
-      font-size: 1.5rem;
-    }
   }
 }

@@ -16,54 +16,77 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
-  <body>
-    <header>
-      <h2>Reliable, efficient delivery</h2>
-      <h1>Powered by Technology</h1>
-      <p>
+  <body class="page">
+    <header class="header">
+      <h2 class="header__sub-title">Reliable, efficient delivery</h2>
+      <h1 class="header__main-title">Powered by Technology</h1>
+      <p class="header__paragraph">
         Our Artificial Intelligence powered tools use millions of project data
         <br />
         points to ensure that your project is successful
       </p>
     </header>
-    <main>
-      <section class="left">
-        <div class="main-supervisor">
-          <h3>Supervisor</h3>
-          <p>Monitors activity to identify project roadblocks</p>
-          <img src="images/icon-supervisor.svg" alt="supervisor" />
+    <main class="main">
+      <div class="main__left">
+        <div class="card card--supervisor">
+          <h3 class="card__title">Supervisor</h3>
+          <p class="card__paragraph">
+            Monitors activity to identify project roadblocks
+          </p>
+          <img
+            class="card__img"
+            src="images/icon-supervisor.svg"
+            alt="supervisor"
+          />
         </div>
-      </section>
-      <section class="center">
-        <div class="main-teambulider">
-          <h3>Team Builder</h3>
-          <p>
+      </div>
+      <div class="main main--center">
+        <div class="card card--teambulider">
+          <h3 class="card__title">Team Builder</h3>
+          <p class="card__paragraph">
             Scans our talent network to create the optimal team for your project
           </p>
-          <img src="images/icon-team-builder.svg" alt="team-bulider" />
+          <img
+            class="card__img"
+            src="images/icon-team-builder.svg"
+            alt="team-bulider"
+          />
         </div>
-        <div class="main-karma">
-          <h3>Karma</h3>
-          <p>Regularly evaluates our talent to ensure quality</p>
-          <img src="images/icon-karma.svg" alt="karma" />
+        <div class="card card--karma">
+          <h3 class="card__title">Karma</h3>
+          <p class="card__paragraph">
+            Regularly evaluates our talent to ensure quality
+          </p>
+          <img class="card__img" src="images/icon-karma.svg" alt="karma" />
         </div>
-      </section>
-      <section class="right">
-        <div class="main-calculator">
-          <h3>Calculator</h3>
-          <p>
+      </div>
+      <div class="main__right">
+        <div class="card card--calculator">
+          <h3 class="card__title">Calculator</h3>
+          <p class="card__paragraph">
             Uses data from past projects to provide better delivery estimates
           </p>
-          <img src="images/icon-calculator.svg" alt="calculator" />
+          <img
+            class="card__img"
+            src="images/icon-calculator.svg"
+            alt="calculator"
+          />
         </div>
-      </section>
+      </div>
     </main>
-    <footer>
-      <p class="attribution">
+    <footer class="footer">
+      <p class="footer__paragraph">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        <a
+          class="footer__link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+        >
           Frontend Mentor </a
-        >. Coded by <a href="https://github.com/primocodetoday">Primoza</a>.
+        >. Coded by
+        <a class="footer__link" href="https://github.com/primocodetoday"
+          >Primoza</a
+        >.
       </p>
     </footer>
   </body>

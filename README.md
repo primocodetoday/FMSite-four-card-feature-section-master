@@ -6,6 +6,6 @@
 
 ####Technology in project
 
-only html & css
+only HTML & SCSS with BEM
 
 ####You can see live site [here](https://primocodetoday.github.io/FMSite-four-card-feature-section-master/ "here")
